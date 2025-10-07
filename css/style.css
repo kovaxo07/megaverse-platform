@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f23;
+    color: #00ffcc;
+}
+.header-content, .main-content, .feature-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.main-header {
+    background-color: #1a1a2e;
+    padding: 1rem 0;
+}
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.main-nav {
+    margin-top: 0.5rem;
+}
+.main-nav .nav-link {
+    color: #00ccff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.cta-buttons .cta-button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.cta-button.primary { background: linear-gradient(90deg,#00d4b8,#00a3ff); color: #041025; }
+.cta-button.secondary { background: #222; color: #fff; }
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.feature-card {
+    background: rgba(255,255,255,0.03);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.token-section, .merchant-section { padding: 2rem 0; }
+button { font-size: 1rem; }
+.form-group { margin-bottom: 0.75rem; }
+input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    color: #cfeee6;
+}
+.hidden { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+
+.footer-content { text-align: center; padding: 1.5rem 0; color: #8fdcd6; }
