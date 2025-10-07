@@ -48,3 +48,10 @@ async function initDABContract() {
 window.dappHelpers = { ensureProvider, initDABContract, hasEthers };
 
 export { ensureProvider, initDABContract, hasEthers };
+
+// Backwards-compatible alias: optional init that was previously in unsaved buffer
+async function initOptionalDABContract() {
+    return await initDABContract();
+}
+
+window.initOptionalDABContract = initOptionalDABContract;
