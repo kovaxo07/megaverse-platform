@@ -1,0 +1,12 @@
+{
+  "name": "megaverse-platform",
+  "version": "0.1.0",
+  "description": "Static frontend for The Megaverse — demo landing site",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server ./ -p 8080"
+  },
+  "devDependencies": {},
+  "keywords": ["megaverse", "vr", "static-site"],
+  "license": "UNLICENSED"
+}

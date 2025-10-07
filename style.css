@@ -1,0 +1,58 @@
+ style.css
+
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f23;
+    color: #00ffcc;
+}
+header {
+    background-color: #1a1a2e;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    color: #00ccff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+#hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Utility to visually hide elements (used for honeypot in forms) */
+.hidden {
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}

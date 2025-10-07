@@ -1,0 +1,52 @@
+index.html
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Megaverse — unified VR platform for gaming, socializing, shopping and entertainment.">
+    <title>The Megaverse | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Megaverse</h1>
+        <nav>
+            <a href="casino.html">Casino & Entertainment</a>
+            <a href="arcade.html">VR Arcade</a>
+            <a href="arena.html">Sports Arena</a>
+            <a href="theater.html">VR Theater</a>
+            <a href="mall.html">Shopping Mall</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>A New Dimension of Experience</h2>
+            <p>Immerse yourself in gaming, socializing, shopping, and entertainment, all in one unified VR platform.</p>
+        </section>
+        <section id="wallet-connect">
+            <h3>Connect Your Wallet</h3>
+            <button id="connectWalletBtn">Connect Wallet</button>
+            <p id="walletAddress"></p>
+        </section>
+        <!-- Merchant Contact Form with Netlify -->
+        <section id="merchant-signup">
+            <h3>Merchant Application</h3>
+            <!-- Netlify form setup: form-name hidden input + optional honeypot bot-field -->
+            <form name="merchant-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success.html">
+                <input type="hidden" name="form-name" value="merchant-contact">
+                <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="brand" placeholder="Brand/Store Name">
+                <textarea name="message" placeholder="Tell us about your store..."></textarea>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
