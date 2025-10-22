@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: megaverse-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  tls:
+    - hosts: [ "app.themegaverse.io" ]
+      secretName: megaverse-tls
+  rules:
+    - host: app.themegaverse.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend: { service: { name: megaverse-frontend-svc, port: { number: 80 } } }
+          - path: /api
+            pathType: Prefix
+            backend: { service: { name: megaverse-backend-svc, port: { number: 80 } } }

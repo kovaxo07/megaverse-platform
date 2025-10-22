@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: megaverse-frontend }
+spec:
+  replicas: 2
+  selector: { matchLabels: { app: megaverse-frontend } }
+  template:
+    metadata: { labels: { app: megaverse-frontend } }
+    spec:
+      containers:
+        - name: web
+          image: your-registry/megaverse-frontend:latest
+          ports: [{ containerPort: 3000 }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: megaverse-frontend-svc }
+spec:
+  selector: { app: megaverse-frontend }
+  ports: [{ port: 80, targetPort: 3000 }]

@@ -1,0 +1,2 @@
+export default function Arena(){return <div style={{padding:20,background:'#000',color:'#ff0',minHeight:'100vh'}}>
+  <h2>Sports Arena (Demo)</h2><p>Matchmaking available after realtime server setup.</p></div>;}
