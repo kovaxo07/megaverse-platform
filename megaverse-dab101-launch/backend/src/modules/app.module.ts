@@ -5,8 +5,19 @@ import { ArenaModule } from './arena.module';
 import { ArcadeModule } from './arcade.module';
 import { CasinoModule } from './casino.module';
 import { WalletModule } from './wallet.module';
+import { ComplianceModule } from './compliance.module';
+import { CheckoutModule } from './checkout.module';
 
 @Module({
-  imports: [AuthModule, MallModule, ArenaModule, ArcadeModule, CasinoModule, WalletModule],
+  imports: [
+    AuthModule,
+    MallModule,
+    ArenaModule,
+    ArcadeModule,
+    CasinoModule,
+    WalletModule,
+    ComplianceModule,
+    CheckoutModule,
+  ],
 })
 export class AppModule {}
